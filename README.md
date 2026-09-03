@@ -1,4 +1,4 @@
-# bazaar-tracker
+# bazaar-flipper
 
 Bazaar-Preise von Hypixel SkyBlock nachschlagen, plus eine Liste mit den Flips die sich grad am meisten lohnen.
 
