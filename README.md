@@ -1,1 +1,1 @@
-# Bazar-Flipper-Beta
+# Bazar-Flipper-Beta V1.0.0
