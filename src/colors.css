@@ -1,0 +1,16 @@
+
+:root {
+  --bg-dark: #121214;
+  --text-light: #e1e1e6;
+  --sidebar-bg: #1a1a1e;
+  --border-main: #29292e;
+  --text-muted: #8d8d99;
+  --white: #ffffff;
+  --btn-border: #323238;
+  --btn-hover-border: #4d4d57;
+  --label-color: #a8a8b3;
+  --canvas-viewport-bg: #09090a;
+  --blue: #0066ff;
+  --blue-transparent: rgba(0, 102, 255, 0.03);
+  --shadow-dark: rgba(0, 0, 0, 0.7);
+}
