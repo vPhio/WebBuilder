@@ -1,10 +1,11 @@
-
 function updateCanvas() {
-
+  //refresh canvas
 }
 
-function btnAddText() {
-
+function AddText() {
   console.log("0");
+}
 
+function wipeCanvas() {
+  //clear json file
 }
