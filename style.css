@@ -54,13 +54,13 @@ body {
 
 /* buttons & inputs */
 .btn-add {
-    background-color: var(--border-main); /* Replaced #29292e */
-    color: var(--white); /* Replaced #ffffff */
-    border: 1px solid var(--btn-border); /* Replaced #323238 */
+    background-color: var(--border-main);
+    color: var(--white);
+    border: 1px solid var(--btn-border);
     padding: 12px;
     font-weight: 600;
     cursor: pointer;
-    text-align: left;
+    text-align: center;
     transition: background 0.2s;
 }
 
@@ -86,13 +86,6 @@ body {
     color: var(--white);
     padding: 8px 12px;
     font-size: 14px;
-}
-
-.color-picker {
-    height: 40px;
-    width: 100%;
-    padding: 2px;
-    cursor: pointer;
 }
 
 /* Scrallable canvas Blatt*/
