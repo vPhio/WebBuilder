@@ -13,13 +13,21 @@
         <div class="builder-app">
             <!-- linkes Panel-->
             <aside class="sidebar sidebar-left">
-                <button class="btn-add" onclick="AddText()">Text Hinzufügen</button>
-                <button class="btn-add" onclick="wipeCanvas()">Canvas Wipen</button>
+                <button class="btn-add" onclick="AddText()">
+                    Text Hinzufügen
+                </button>
+                <button class="btn-add" onclick="wipeCanvas()">
+                    Canvas Wipen
+                </button>
             </aside>
 
             <!-- canvas (center)-->
             <main class="canvas-viewport">
-                <div class="canvas-page" id="canvasPage"></div>
+                <div class="canvas-page" id="canvasPage">
+                    <div class="frameContent">
+                        <p>test content</p>
+                    </div>
+                </div>
             </main>
         </div>
         <script src="index.js"></script>
