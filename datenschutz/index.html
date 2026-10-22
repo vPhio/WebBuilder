@@ -5,16 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Datenschutzerklärung – Phio Studios</title>
 <meta name="color-scheme" content="dark">
-<style>
-  body { font-family: sans-serif; line-height: 1.5; }
-  main { max-width: 38rem; padding: 1.5rem; margin: auto; }
-</style>
+<link rel="preload" href="/assets/fonts/RedHatText-VF.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/tokens.css">
+<link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<main>
-  <p><a href="/">← Zur Startseite</a></p>
+<header class="wrap site-header"><a href="/">WebBuilder</a></header>
+<main class="wrap legal">
   <h1>Datenschutzerklärung</h1>
-  <nav aria-label="Inhaltsverzeichnis"><strong>Inhalt</strong>
+  <nav class="toc" aria-label="Inhaltsverzeichnis"><strong>Inhalt</strong>
     <ol>
       <li><a href="#ueberblick">Datenschutz auf einen Blick</a></li>
       <li><a href="#verantwortlicher">Verantwortlicher</a></li>
@@ -196,8 +195,10 @@
   <p>Diese Website richtet sich an alle Altersgruppen. Da keine Benutzerkonten angelegt werden und keine Formulare existieren, werden über die technisch notwendigen Daten hinaus keine Daten von Kindern oder Jugendlichen erhoben. Wenn du unter 16 Jahre alt bist, sprich bitte mit deinen Eltern, bevor du mir persönliche Informationen per E-Mail oder Telefon schickst.</p>
   <h2 id="aenderungen">26. Änderungen dieser Datenschutzerklärung</h2>
   <p>Diese Datenschutzerklärung wird angepasst, wenn sich die Website, die eingesetzten Dienste oder die rechtlichen Anforderungen ändern. Es gilt jeweils die hier veröffentlichte aktuelle Fassung. Das Datum des letzten Stands findest du unten auf dieser Seite.</p>
-  <hr>
-  <footer>© 2026 Phio Studios · <a href="/impressum/">Impressum</a> · <a href="/datenschutz/">Datenschutz</a> · Stand: September 2026</footer>
+  <p class="stand">Stand: September 2026</p>
 </main>
+<footer class="wrap site-footer">
+  <nav aria-label="Rechtliches"><a href="/impressum/">Impressum</a><a aria-current="page" href="/datenschutz/">Datenschutz</a></nav>
+</footer>
 </body>
 </html>

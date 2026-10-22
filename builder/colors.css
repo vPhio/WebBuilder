@@ -1,9 +1,3 @@
-:root {
-  color-scheme: dark;
-  --bg: #1e1e1e;
-  --text: #dddddd;
-  --line: #555555;
-  --page: #ffffff;
-  --page-text: #000000;
-  --select: #0066ff;
-}
+/* Die Farben und Schriften kommen aus den gemeinsamen Tokens der ganzen Seite.
+   Neue Farben bitte dort eintragen, nicht hier. */
+@import url("../assets/tokens.css");

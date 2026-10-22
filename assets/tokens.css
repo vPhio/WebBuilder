@@ -1,0 +1,41 @@
+/* Gemeinsame Design-Tokens für alle Seiten und den Builder.
+   Farben und Schriften nur hier ändern, nicht in den einzelnen Dateien. */
+
+/* Schriften liegen selbst auf dem Server (keine Google Fonts, siehe Datenschutz).
+   Red Hat Display und Red Hat Text, SIL Open Font License: fonts/OFL.txt */
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("fonts/RedHatDisplay-VF.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: url("fonts/RedHatText-VF.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Farben */
+  --ground: #25272b;          /* Graphit: Grund der Seite */
+  --surface: #2f3236;         /* Flächen, z. B. die Seitenleisten im Builder */
+  --surface-raised: #393c41;  /* Hover auf Flächen */
+  --line: #474b51;            /* Rahmen und Trennlinien */
+  --text: #e9e7e2;            /* Text */
+  --muted: #a9aaa6;           /* leiser Text */
+  --sheet: #ffffff;           /* das Blatt im Builder und der Hauptbutton */
+  --sheet-hover: #dedede;
+  --sheet-text: #1c1d1f;      /* Text auf dem Blatt */
+  --accent: #8fb3ff;          /* Links und Tastatur-Fokus */
+  --accent-on-sheet: #0066ff; /* Auswahl auf dem weißen Blatt */
+
+  /* Schrift */
+  --font-text: "Red Hat Text", sans-serif;
+  --font-title: "Red Hat Display", "Red Hat Text", sans-serif;
+
+  --radius: 4px;
+}
