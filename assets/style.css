@@ -4,22 +4,23 @@
 }
 
 body {
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  margin: 0;
   background: var(--bg);
   color: var(--text);
   font: 1.0625rem/1.6 sans-serif;
+}
+
+main {
+  flex: 1;
 }
 
 h1,
 h2,
 h3 {
   line-height: 1.2;
-}
-
-h2 {
-  margin-top: 2.5rem;
 }
 
 a {
@@ -31,23 +32,138 @@ a {
   outline-offset: 2px;
 }
 
-.button {
-  display: inline-block;
-  padding: 0.6rem 1rem;
-  border-radius: 4px;
-  background: var(--text);
-  color: var(--bg);
+/* Kopfzeile */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding-right: 1rem;
+  border-right: 1px solid var(--line);
+  color: var(--text);
   font-weight: bold;
   text-decoration: none;
 }
 
-footer {
-  margin-top: 3rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
+.header-link {
+  font-weight: bold;
+  text-decoration: none;
 }
 
-footer a {
-  margin-right: 1rem;
+.header-link:hover {
+  text-decoration: underline;
+}
+
+/* Startseite */
+.hero {
+  padding: 5rem 1.25rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+}
+
+.hero p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Laufband mit Satire-Bewertungen, läuft von links nach rechts */
+.reviews {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.reviews-note {
+  margin: 0 1.25rem 1rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.reviews-track {
+  display: flex;
+  width: max-content;
+  animation: slide 60s linear infinite;
+}
+
+.reviews:hover .reviews-track {
+  animation-play-state: paused;
+}
+
+.reviews ul {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0 1rem 0 0;
+  list-style: none;
+}
+
+.reviews li {
+  width: 17rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.reviews blockquote {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.reviews .stars {
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+
+.reviews .who {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reviews {
+    overflow-x: auto;
+  }
+
+  .reviews-track {
+    animation: none;
+  }
+}
+
+/* Impressum und Datenschutz */
+.text {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+.text h2 {
+  margin-top: 2.5rem;
+}
+
+/* Fußzeile */
+.site-footer {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
 }
