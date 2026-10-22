@@ -1,3 +1,2 @@
-/* Die Farben und Schriften kommen aus den gemeinsamen Tokens der ganzen Seite.
-   Neue Farben bitte dort eintragen, nicht hier. */
-@import url("../assets/tokens.css");
+/* Die Farben kommen aus der gemeinsamen Datei der ganzen Seite. Neue Farben bitte dort eintragen. */
+@import url("../assets/colors.css");

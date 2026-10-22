@@ -1,0 +1,53 @@
+/* Startseite, Impressum und Datenschutz. Farben: colors.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  background: var(--bg);
+  color: var(--text);
+  font: 1.0625rem/1.6 sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h2 {
+  margin-top: 2.5rem;
+}
+
+a {
+  color: var(--link);
+}
+
+:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  background: var(--text);
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+footer a {
+  margin-right: 1rem;
+}
