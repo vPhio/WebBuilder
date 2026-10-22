@@ -90,6 +90,10 @@ a {
   font-size: 0.9375rem;
 }
 
+.reviews-note strong {
+  color: var(--text);
+}
+
 .reviews-track {
   display: flex;
   width: max-content;
