@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <title>Editor</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>PJ-Text</h1>
+            <nav>
+                <a class="active" href="index.html">Editor</a>
+                <a href="templates.html">Templates</a>
+                <a href="help.html">Help</a>
+                <a href="about.html">About</a>
+            </nav>
+        </header>
+
+        <div class="menubar">
+            <details>
+                <summary>File</summary>
+                <div class="dropdown-menu">
+                    <a href="index.html">New</a>
+                    <a href="expot.js">Export file</a>
+                </div>
+            </details>
+            <details>
+                <summary>Edit</summary>
+                <div></div>
+            </details>
+            <details>
+                <summary>Insert</summary>
+                <div></div>
+            </details>
+            <details>
+                <summary>Format</summary>
+                <div></div>
+            </details>
+        </div>
+
+        <div class="layout">
+            <aside>
+                <h2>Add text</h2>
+                <button>Headline</button>
+                <button>Paragraph</button>
+                <h2>Add Table</h2>
+                <button>Add Coloum</button>
+                <button>Add Row</button>
+            </aside>
+
+            <main>
+                <div class="toolbar">
+                    <button style="font-style: italic;">I</button>
+                    <button style="text-decoration: underline;">U</button>
+                    <button style="font-weight: 600;">B</button>
+                </div>
+
+                <div class="page" contenteditable="true">
+                    <h1>Latein == Französisch</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+            </main>
+
+            <aside>
+                <h2>Farbe</h2>
+                <label>Textfarbe<input type="color" value="#000000" /></label>
+                <br />
+                <label>Markerfarbe <input type="color" value="#ffffff" /></label>
+                <h2>Font</h2>
+                <select>
+                    <option>Jetbrain Nerd Mono</option>
+                    <option>Arial</option>
+                    <option>Courier New</option>
+                </select>
+            </aside>
+        </div>
+
+        <footer>Blocktext</footer>
+    </body>
+</html>

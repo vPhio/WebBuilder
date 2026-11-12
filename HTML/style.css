@@ -1,0 +1,109 @@
+:root {
+    --bg: #eee;
+    --fg: #222;
+    --accent: #06c;
+}
+
+body {
+    font-family: monospace;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    background: var(--bg);
+    color: var(--fg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--accent);
+}
+
+/*Flexbox für 1x1 col und/oder row*/
+header,
+nav,
+.menubar,
+.toolbar {
+    display: flex;
+    gap: 10px;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    margin-bottom: 6px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Grid: row und colms */
+.layout, .template-grid {
+    display: grid;
+    gap: 10px;
+}
+.layout {
+    grid-template-columns: 200px 1fr 200px;
+    flex: 1;
+}
+.template-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+aside, .page, .card {
+    border: 1px solid;
+    padding: 10px;
+}
+
+.page {
+    flex: 1;
+    background: white;
+    flex-wrap: nowrap;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    border-bottom: 2px solid;
+    border-color: black;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+/*Die Tabelle auf der @help page*/
+th,
+td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+img {
+    display: felx;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    height: 220px;
+    width: 220px;
+}
+
+/*muss noch*/
+
+dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
